@@ -108,5 +108,6 @@ urlpatterns = [
     path('student_profile_save', StudentViews.student_profile_save, name="student_profile_save"),
     path('student_fcmtoken_save', StudentViews.student_fcmtoken_save, name="student_fcmtoken_save"),
     path('firebase-messaging-sw.js',views.showFirebaseJS,name="show_firebase_js"),
+    path('student_view_result',StudentViews.student_view_result,name="student_view_result"),
 
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)+static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
